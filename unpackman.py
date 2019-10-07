@@ -96,12 +96,6 @@ rule inderect_jumps
 }
 """
 
-def test():
-    start = idc.get_segm_by_sel(0)
-    end = idc.get_segm_end(start)
-    data = idaapi.get_many_bytes(start, end - start)
-    return yara.compile(source=xxx).match(data=data)
-
 align = lambda size, alignment: ((size // alignment) + 1) * alignment
 
 def patch(dest, seq):
