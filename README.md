@@ -1,3 +1,5 @@
+# League of Legends anti-cheat code deobfuscator.
+
 # How to use:
 step 1:
 
